@@ -1,0 +1,76 @@
+Index,Description,Max Length,Data Type,Data Source,Source Field
+1,Key field. HMDA/CRA collection year,4,AN,Other,
+2,Key field. MSA/MD Code,5,AN,Other,
+3,Key field. FIPS state code,2,AN,Other,
+4,Key field. FIPS county code,3,AN,Other,
+5,Key field. Census tract. Implied decimal point.,6,AN,Other,
+6,"Principal city flag. 0=not principal city, 1=principal city",1,AN,NA,NA
+7,"Small county flag. T=tract record, S=small county, I=island area",1,AN,Other,
+8,"Split tract flag. N=tract number occurs within one MA, S=split between Mas",1,AN,NA,NA
+9,"Demographic data flag. X=Total persons/population or median family income is 0, D=total persons/population and median family income are not 0, I=Island Area",1,AN,NA,NA
+10,"Urban/rural flag. U=urban, R=rural, M=mixed, I=Island Area",1,AN,NA,NA
+11,MSA/MD median family income,8,N,NA,NA
+12,MSA/MD median household income,8,N,NA,NA
+13,"Tract median family income as a percentage of the MSA/MD median family income. 2 decimal places, truncated.",6,"Decimal(6,2)",NA,NA
+14,FFIEC Estimated MSA/MD Median Family Income,8,N,NA,NA
+15,Total persons,8,N,Redistricting,P0010001 (Redistricting data does not include island areas)
+16,Total families,8,N,NA,NA
+17,Total households,8,N,NA,NA
+18,Total female population,8,N,NA,NA
+19,Total male population,8,N,NA,NA
+20,Total population minus white alone population,8,N,Redistricting,P0020001 - P0020005
+21,Minority population as percent of tract population rounded to two decimal places,6,N,Redistricting,"If P0020001 is 0, then this is also 0. Otherwise, it is calculated using (P0020001-P0020005)*100.00/P0020001. (See index 22 and 26)"
+22,Total population Hispanic and Non-Hispanic,8,N,Redistricting,P0020001
+23,Total population Hispanic only,8,N,Redistricting,P0020002
+24,Total population Non-Hispanic,8,N,Redistricting,P0020003
+25,Total population Non-Hispanic one race,8,N,Redistricting,P0020004
+26,Total population Non-Hispanic White,8,N,Redistricting,P0020005
+27,Total population Non-Hispanic Black/African American,8,N,Redistricting,P0020006
+28,Total population Non-Hispanic American Indian/Alaska Native,8,N,Redistricting,P0020007
+29,Total population Non-Hispanic Asian,8,N,Redistricting,P0020008
+30,Total population Non-Hispanic Native Hawaiian/other Pacific Islander,8,N,Redistricting,P0020009
+31,Total population Non-Hispanic some other race,8,N,Redistricting,P0020010
+32,Total population Non-Hispanic two or more races,8,N,Redistricting,P0020011
+33,Total population Non-Hispanic exactly two races,8,N,Redistricting,P0020012
+34,Total population Non-Hispanic White and Black,8,N,Redistricting,P0020013
+35,Total population Non-Hispanic White and American Indian/Alaska Native,8,N,Redistricting,P0020014
+36,Total population Non-Hispanic White and Asian,8,N,Redistricting,P0020015
+37,Total population Non-Hispanic White and Native Hawaiian Pacific Islander,8,N,Redistricting,P0020016
+38,Total population Non-Hispanic White and some other race,8,N,Redistricting,P0020017
+39,Total population Non-Hispanic Black and American Indian/Alaska Native,8,N,Redistricting,P0020018
+40,OMB civil rights Non-Hispanic Black,8,N,Redistricting,P0020006+P0020013
+41,OMB civil rights Non-Hispanic American Indian/Alaska Native,8,N,Redistricting,P0020007+P0020014
+42,OMB civil rights Non-Hispanic Asian,8,N,Redistricting,P0020008+P0020015
+43,OMB civil rights Non-Hispanic Native Hawaiian Pacific Islander,8,N,Redistricting,P0020009+P0020016
+44,OMB civil rights Non-Hispanic Some Other Race,8,N,Redistricting,P0020010+P0020017
+45,OMB civil rights Non-Hispanic Two or More Races,8,N,Redistricting,P0020011-P0020013-P0020014-P0020015-P0020016-P0020017
+46,Total population Hispanic by race,8,N,Redistricting,P0020002
+47,Total population Hispanic and white ,8,N,NA,NA
+48,Total population Hispanic and black/African-American,8,N,NA,NA
+49,Total population Hispanic and American Indian/Alaska native,8,N,NA,NA
+50,Total population Hispanic and Asian,8,N,NA,NA
+51,Total population Hispanic and native Hawaiian/other Pacific Islander,8,N,NA,NA
+52,Total population Hispanic and some other race,8,N,NA,NA
+53,Total population Hispanic and two or more races,8,N,NA,NA
+54,Total population by race,8,N,Redistricting,P0010001
+55,Total population one race,8,N,Redistricting,P0010002
+56,Total population White,8,N,Redistricting,P0010003
+57,Total population Black/African American,8,N,Redistricting,P0010004
+58,Total population American Indian/Alaska Native,8,N,Redistricting,P0010005
+59,Total population Asian,8,N,Redistricting,P0010006
+60,Total population Native Hawaiian/other Pacific Islander,8,N,Redistricting,P0010007
+61,Total population some other race,8,N,Redistricting,P0010008
+62,Total population two or more races,8,N,Redistricting,P0010009
+63,Total population exactly two races,8,N,Redistricting,P0010010
+64,Total population White and Black,8,N,Redistricting,P0010011
+65,Total population White and American Indian/Alaska Native,8,N,Redistricting,P0010012
+66,Total population White and Asian,8,N,Redistricting,P0010013
+67,Total population White and Native Hawaiian Pacific Islander,8,N,Redistricting,P0010014
+68,Total population White and some other race,8,N,Redistricting,P0010015
+69,Total population Black and American Indian/Alaska Native,8,N,Redistricting,P0010016
+70,OMB civil rights Black,8,N,Redistricting,P0010004+P0010011
+71,OMB civil rights American Indian/Alaska Native,8,N,Redistricting,P0010005+P0010012
+72,OMB civil rights Asian,8,N,Redistricting,P0010006+P0010013
+73,OMB civil rights Native Hawaiian Pacific Islander,8,N,Redistricting,P0010007+P0010014
+74,OMB civil rights Some Other Race,8,N,Redistricting,P0010008+P0010015
+75,OMB civil rights Two or More Races,8,N,Redistricting,P0010009-P0010011-P0010012-P0010013-P0010014-P0010015
