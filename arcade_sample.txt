@@ -1,0 +1,9 @@
+function getCRA(inData){
+    if(inData == "1"){
+        return "Yes"
+    }
+    else {
+        return "No"
+    }
+}
+getCRA($feature.ffiec_6)
